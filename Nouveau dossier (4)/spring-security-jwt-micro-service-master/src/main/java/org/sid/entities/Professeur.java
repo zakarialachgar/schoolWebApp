@@ -10,16 +10,11 @@ import javax.persistence.*;
 @Entity
 @Data
 @AllArgsConstructor @NoArgsConstructor @ToString
-public class Etudiant extends AppUser{
-
-    @Column(unique = true)
-    private String cne;
+public class Professeur extends AppUser {
+    private String code;
     private String firstname;
     private String lastname;
-    private String filiere;
+    private String matriere;
     private String email;
     private String num;
-    private String numP;
-
-
 }
